@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-color: rgb(124, 124, 116);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    height: 25rem;
+    width: 25rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3px;
+}
+.container .box{
+    height: 8rem;
+    width: 8rem;
+    font-size: 3rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: #ffffc7;
+    color: black;
+}
+.reset-btn{
+    border: none;
+    outline: none;
+    font-size: 1.3rem;
+    margin: 1rem;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(226, 80, 43);
+}
+.msg{
+    font-size: 2rem;
+    color: #ffffc7;
+}
+.winDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hide{
+    display: none;
+}
