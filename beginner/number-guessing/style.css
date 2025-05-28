@@ -49,6 +49,19 @@ form button{
     cursor: pointer;
     border-radius: 3px;
 }
+.btn-2{
+    height: 30px;
+    margin: 10px 0;
+    padding: 2px;
+    font-size: 1.3rem;
+    border: none;
+    outline: none;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+    display: none;
+}
 h2{
     margin: 5px 0;
     color: rgb(110, 248, 31);
