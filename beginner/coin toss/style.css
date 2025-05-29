@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+   height: 100vh;
+   background-color: blueviolet;
+}
+.container{
+    background: #ffff;
+    margin: 100px auto;
+    width: 400px;
+    padding: 35px;
+}
+.Coin{
+    height: 150px;
+    width: 150px;
+    position: relative;
+    margin: 32px auto;
+    transform-style: preserve-3d;
+}
+.Coin img{
+    width: 100%;
+    height: 100%;
+}
+.tail-coin,.head-coin{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+ .tail-coin{
+    transform: rotateX(180deg);
+}
+ @keyframes head-anim {
+    0%{
+        transform: rotateX(0);
+    }
+    100%{
+        transform: rotateX(2160deg);
+    }
+    
+}
+@keyframes tail-anim {
+    0%{
+        transform: rotateX(0);
+    }
+    100%{
+        transform: rotateX(1980deg);
+    }  
+} 
+
+.details{
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid rgb(228, 223, 223);
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgb(145, 139, 139);
+    display: flex;
+    justify-content: space-between;
+}
+.btn{
+     margin: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.btn-style{
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    background-color: rgb(231, 226, 236);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn-style:hover{
+    background-color: rgb(176, 187, 196);
+}
