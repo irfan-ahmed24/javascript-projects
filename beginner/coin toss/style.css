@@ -62,10 +62,11 @@ body{
     justify-content: space-between;
 }
 .btn{
-     margin: 10px;
+    margin: 10px;
     display: flex;
     justify-content: space-between;
 }
+
 .btn-style{
     padding: 10px;
     font-size: 15px;
