@@ -88,7 +88,7 @@ let productsList = [
 let products = document.querySelector(".Products");
 
 let productLangth = productsList.length;
-console.log(products);
+
 for (let i = 0; i < productLangth; i++) {
   //create product section
   let product = document.createElement("div");
@@ -123,3 +123,21 @@ for (let i = 0; i < productLangth; i++) {
   productName.innerHTML = name;
   productPrice.innerHTML = `price: ${price}$`;
 }
+
+//filter product
+const search = () => {
+  let input = document.querySelector("#input-product").value.toLowerCase();
+
+  for (let i = 0; i < productLangth; i++) {
+    let product = document.querySelectorAll(".product");
+    let productName = productsList[i].name.toLowerCase();
+    //use inclodes method to filter product
+    //if product name includes input value then display it otherwise hide it
+    if (productName.includes(input)) {
+      product[i].style.display = "";
+    } else {
+      product[i].style.display = "none";
+    }
+  }
+};
+//filter product by catagory
